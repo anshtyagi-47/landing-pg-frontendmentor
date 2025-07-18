@@ -173,7 +173,15 @@ li {
 
 /*======================= Tech Journey section ==========================*/
 .tech-journey__steps {
-    padding: 3rem 22rem;
+    padding: 3rem 8rem;  /* reduced padding from 22rem to 8rem */
+}
+
+.tech-journey__heading {
+    color: var(--gunmetal);
+    text-align: center;
+    font-family: var(--martian-mono);
+    font-size: 3.875rem;  /* increased from 3.125rem to match previous size */
+    margin-bottom: 2rem;  /* added margin for better spacing */
 }
 
 .journey-steps__container {
@@ -186,41 +194,39 @@ li {
     flex-direction: column;
     display: flex;
     border-radius: 0.625rem;
-    max-width: 73.125rem;
     width: 100%;
-    max-height: 454px;
-    height: 28.376rem;
-}
-
-.tech-journey__heading {
-    color: var(--gunmetal);
-    text-align: center;
-    font-family: var(--martian-mono);
-    font-size: 3.125rem;
+    padding: 5rem 2rem;  /* increased padding for better vertical spacing */
+    height: auto;
 }
 
 .journey-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;  /* reduced from 2rem to 1rem */
     margin-top: 5rem;
-    margin-left: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 0;
 }
 
 .member-box__steps {
     display: flex;
-    justify-content: space-around;
-    max-width: 226px;
-    width: 100%
+    align-items: flex-start;
+    gap: 0.5rem;  /* reduced from 1rem to 0.5rem */
+    width: 100%;
+    max-width: 250px;
 }
 
 .jn__box {
     color: var(--teal-green);
     border: 1px solid var(--teal-green);
-    width: 40px;
-    text-align: center;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-family: var(--inter-serif);
-    padding: 0.1rem;
 }
 
 .box-step__description {
@@ -228,7 +234,7 @@ li {
     font-family: var(--martian-mono);
     font-size: 1.125rem;
     font-weight: 600;
-    width: 14.156rem;
+    width: auto;  /* changed from fixed width */
 }
 
 /*======================= Tech Journey section ===============================*/
