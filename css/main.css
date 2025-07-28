@@ -21,8 +21,9 @@
     margin: 0;
     padding: 0;
 }
-
-/*===================== Book club joining section styling =====================*/
+.rgcontent{
+    margin-left:20px;
+}
 
 .ultimate-tech__section {
     background-image: url(../assets/images/pattern-light-bg.svg);
